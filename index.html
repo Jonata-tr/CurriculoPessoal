@@ -1,30 +1,185 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jonatan - Front End</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <header class="header">
-    <img src="./img/logo.svg" alt="">
-    <nav>
-      <ul class="header-menu">
-        <li><a href="#experiencias">Experiências</a></li>
-        <li><a href="#formações">Formações</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jonatan - Front End</title>
+    <meta name="description" content="Curriculo Programador Front-End, UI/UX Design Jonatan Trindade.">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/logo.svg" alt="" class="logo" width="200px" height="64px"/>
+      <nav>
+        <ul class="header-menu">
+          <li><a href="#experiencias">Experiências</a></li>
+          <li><a href="#formações">Formações</a></li>
+          <li><a href="#s1">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <img src="" alt="">
-    <h1>
-      Ola, sou o Jonatan.<br/>
-      Desenvolvedor <span>Front End</span>.
-    </h1>
-  </main>
-</body>
+    <main>
+      <section class="container principal">
+        <img src="./img/Perfil.png" alt="" class="intro-img" />
+        <div class="intro">
+          <h1 class="intro-descricao">
+            Ola, sou o Jonatan.<br />
+            <span>Front End</span> e <span>UI Design</span>.
+          </h1>
+          <p>
+            Adorador da cultura nerd e jogos de tiro desafiadores! <br />
+            Localizado em Manaus.
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="container experiencia"
+        id="experiencias"
+        saria-label="Experiências"
+      >
+        <h2 class="subtitulo">Experiência</h2>
+        <div class="experiencia-container">
+          <p class="experiencia-lista">
+            Desenvolvo sites com qualidade e muita curiosidade, fiz alguns
+            projetos como um site conversor de moedas, uma land-page, entre
+            outros projetos, para esses projetos utilizei <strong>Html</strong>,
+            <strong>CSS</strong>, <strong>JavaScript</strong> e
+            <strong>React</strong>.
+          </p>
+
+          <div class="experiencia-card">
+            <span class="card-ano">2021</span>
+            <h3 class="card-titulo">Bickcraft</h3>
+            <span class="card-titulo">Projeto Origamid</span>
+            <p class="card-texto">
+              Site criado para testar o JavaScript, feito com funcionalidades de
+              escolha de ação e entregas de cartas aleatorias para o jogador.
+            </p>
+            <ul class="card-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>UI Design</li>
+            </ul>
+          </div>
+
+          <div class="experiencia-card">
+            <span class="card-ano">2021</span>
+            <h3 class="card-titulo">Bickcraft</h3>
+            <span class="card-titulo">Projeto Origamid</span>
+            <p class="card-texto">
+              Site criado para testar o JavaScript, feito com funcionalidades de
+              escolha de ação e entregas de cartas aleatorias para o jogador.
+            </p>
+            <ul class="card-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>UI Design</li>
+            </ul>
+          </div>
+
+          <div class="experiencia-card">
+            <span class="card-ano">2021</span>
+            <h3 class="card-titulo">Bickcraft</h3>
+            <span class="card-titulo">Projeto Origamid</span>
+            <p class="card-texto">
+              Site criado para testar o JavaScript, feito com funcionalidades de
+              escolha de ação e entregas de cartas aleatorias para o jogador.
+            </p>
+            <ul class="card-habilidades">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>UI Design</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="formacoes-wrapper" id="formações">
+        <div class="container formacoes">
+          <h2 class="subtitulo">Formação</h2>
+
+          <div class="formacoes-center">
+            <p class="formacoes-texto">
+              Experiência com desenvolvimento de projetos pessoais e academicos.
+              Me matenho sempre em aprendizado, realizando cursos que me
+              capacitam cada vez mais nas areas de <strong>Design</strong>,
+              <strong>UI/UX</strong> e <strong>Programação</strong>.
+            </p>
+
+            <ul class="formacoes-cursos">
+              <li class="formacoes-card">
+                <span class="card-tipo">Tecnologo</span>
+                <h3 class="card-nome">Ciências da Computação</h3>
+                <span class="card-local">Descomplica</span>
+              </li>
+              <li class="formacoes-card">
+                <span class="card-tipo">Curso Extra</span>
+                <h3 class="card-nome">Desenvolvimento Web</h3>
+                <span class="card-local">Origamid</span>
+              </li>
+              <li class="formacoes-card">
+                <span class="card-tipo">Curso Extra</span>
+                <h3 class="card-nome">Complete Web Development</h3>
+                <span class="card-local">Udemy</span>
+              </li>
+            </ul>
+
+            <div class="formacoes-extra">
+              <div class="cursos">
+                <h3>Cursos Extras</h3>
+                <ul>
+                  <li>Pacote-Office Avançado <span>40h</span></li>
+                  <li>Inglês Intermediario <span>36h</span></li>
+                </ul>
+              </div>
+
+              <div class="idioma">
+                <h3>Idiomas</h3>
+                <ul>
+                  <li>Ingles <span>/ Intermediario</span></li>
+                  <li>Leitura <span>/ Anvançado</span></li>
+                  <li>Escuta <span>/ Anvançado</span></li>
+                  <li>Conversação <span>/ Básica</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-wrapper" id="contato">
+       <div class="container footer">
+        <p>Estou disponível  para novos projetos e trabalhos.  Entre em contato comigo para mais informações ou para envio de dicas e sugestões.</p>
+        <ul class="footer-contato">
+          <li>
+            <a href="mailto:jonatatrindasilva@gmail.com">jonatatrindasilva@gmail.com</a>
+          </li>
+          <li><a href="tel:+5592985053776">(92) 98505-3776</a></li>
+          <li><a href="#">Linkendin: JonatanTr</a></li>
+        </ul>  
+       </div>      
+      </section>
+    </main>
+
+    <script>
+      const block = document.querySelector(".experiencia-container");
+      const blockOffset = block.offsetTop;
+
+      const triggerAnimation = () => {
+        const scrollHeight = document.body.scrollHeight;
+        if (scrollHeight >= blockOffset) {
+          block.classList.add("ani");
+          window.removeEventListener("scroll", triggerAnimation);
+        }
+      };
+
+      window.addEventListener("scroll", triggerAnimation);
+    </script>
+  </body>
 </html>

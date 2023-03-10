@@ -1,8 +1,11 @@
 /* Font-Imports */
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&family=K2D:wght@400;500;700;800&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap'); 
 
 /* Css Imports */
 @import './header.css';
 @import './global.css';
 @import './introducao.css';
+@import './experiencias.css';
+@import './formacoes.css';
+@import './footer.css';
 

@@ -1,11 +1,11 @@
 .header{
   font-family: 'Josefin Sans', sans-serif;
-  position: relative;
+  position:static;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 20px 80px;
+  padding: 20px 40px;
   max-width: 1600px;
 }
 
@@ -21,6 +21,8 @@
   color: #666;
   display: block;
 }
+
+
 
 @media (max-width:800px){
   .header{

@@ -2,11 +2,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
   color: #141414;
+  overflow-x: hidden;
 }
 
 a,
@@ -18,4 +20,33 @@ ul{
 img{
   max-width: 100%;
   display: block;
+}
+
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+  gap: 72px;
+}
+
+.subtitulo{
+  font-family: 'K2D', sans-serif;
+  font-size: 8.5rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 6ch;
+  color: #E7E7E7;
+}
+
+@media (max-width:800px){
+  .subtitulo{
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
 }

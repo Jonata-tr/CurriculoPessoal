@@ -1,0 +1,131 @@
+
+.principal h1{
+  font-family: 'K2D', sans-serif;
+  font-weight: 500;
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.intro{
+  justify-self: center;
+}
+
+.principal h1::before{
+  content: "";
+  display: block;
+  width: 170px;
+  height: 140px;
+  background: url('../img/Decorador.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -55px;
+  left: -80px;
+  z-index: -1;
+}
+
+.principal span{
+  color: #692CC9;
+}
+
+.principal p{
+  font-size: 1.5rem;
+  color: #525252;
+}
+
+@media (max-width:1060px){
+  .principal h1{
+    font-size: 3rem;
+  }
+  
+  .principal h1::before{
+    width: 120px;
+    height: 100px;
+    top: -40px;
+    left: -60px;    
+  }
+ 
+   .principal p{
+    font-size: 1.2rem;
+   } 
+
+}
+@media (max-width:800px){
+  
+  .principal{
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .principal h1{
+    font-size: 2.4rem;
+  }
+
+  .principal h1::before{
+    width: 80px;
+    height: 65px;
+    transform: rotate(42deg);
+    left: -20px;
+    top: -50px;
+  }
+
+  @media (max-width: 580px){
+    .container.principal{
+      grid-template-columns: minmax(200px, 400px);
+      grid-template-rows: repeat(auto);
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      gap: 0;
+    }
+
+    .principal .intro{
+      background-color: #f1f1f1;
+      padding: 32px 24px 10px;
+      border-radius: 8px;
+      position: relative;
+      top: -55px;
+      z-index: -1;
+    }
+
+    .principal h1::before{
+      width: 80px;
+      height: -65px;
+      transform: rotate(90deg);
+      left: -60px;
+      top: -65px;
+    }
+
+    .principal h1::after{
+      content: "";
+      display: block;
+      width: 80px;
+      height: 65px;
+      background: url('../img/Decorador.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: -60px;
+      top: -65px;;
+      z-index: -1;
+    }
+
+  }
+
+}
+
+@media (max-width:375px){
+  .principal h1{
+    font-size: 1.6rem;
+  }
+
+  .principal p{
+    font-size: 1.2rem;
+  }
+
+  .principal .intro{
+    top: -55px;
+  }
+}
